@@ -1,3 +1,9 @@
+linode-longview (1.1.5wschaub1) xenial; urgency=medium
+
+  * Ignore loopback interface statistics.
+
+ -- William Schaub <william.schaub@gmail.com>  Mon, 01 Oct 2018 09:40:09 -0500
+
 linode-longview (1.1.5) stable; urgency=low
 
   * fix naming issues in debian installation files

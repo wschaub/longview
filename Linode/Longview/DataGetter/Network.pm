@@ -52,6 +52,7 @@ sub get {
 		next if ( $rx_bytes == 0 && $tx_bytes == 0 );
 		$dev =~ s/:$//;
 		$dev =~ s/\./\\\./g;
+		next if $dev eq 'lo';
 
 		$dataref->{LONGTERM}->{"Network.Interface.$dev.rx_bytes"} = $rx_bytes + 0;
 		$dataref->{LONGTERM}->{"Network.Interface.$dev.tx_bytes"} = $tx_bytes + 0;
